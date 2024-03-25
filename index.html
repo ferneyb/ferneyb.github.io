@@ -4,333 +4,532 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./img/logo2.png" />
-    <title>Ferney Tenorio Basto</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
-    <!--icons-->
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- ===== BOX ICONS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
+    <title>Fernet Tenorio Basto</title>
 </head>
 
 <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
 
-    <div class="wrapper">
-        <div class="cover cover-left"></div>
-        <div class="cover cover-right"></div>
+            <div>
+                <a href="#home" class="nav_logo" id="logo_background">Ferney</a>
+            </div>
 
-        <div class="book">
-            <!--profile page-->
-            <div class="book-page page-left">
-                <div class="profile-page">
-                    <img src="./img/ferney.png" alt="" class="images-icons" srcset="./img/ferney.png 370w"
-                        sizes="(min-width:370) 50vh,70vh">
-                    <h1>Ferney Tenorio Basto</h1>
-                    <h3>Desarrollador de Software</h3>
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
 
-                    <div class="social-media">
-                        <a href="https://wa.me/573059064346" target="_blank" rel="noopener noreferrer"><i
-                                class='bx bxl-whatsapp'></i></a>
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Inicio</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">Sobre Mi</a></li>
+                    <li class="nav_item"><a href="#experience" class="nav_link">Experiencia</a></li>
+                    <li class="nav_item"><a href="#education" class="nav_link">Estudios</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Habilidades</a></li>
+                    <li class="nav_item"><a href="#services" class="nav_link">Servicios</a></li>
+                    <li class="nav_item"><a href="#works" class="nav_link">Proyectos</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--===== HEADER =====-->
 
-                        <a href="https://www.linkedin.com/in/ferney-tenorio-basto/" target="_blank"
-                            rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/ferneyb" target="_blank" rel="noopener noreferrer"><i
-                                class='bx bxl-github'></i></a>
 
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home_container bd-grid">
+                <div class="home_data">
+                    <div class="home_img">
+                        <img src="./img/ferney.png" alt="" class="home_img">
                     </div>
-                    <!--
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum alias est, odio omnis ad
-                        deleniti incidunt mollitia sequi temporibus, ab optio labore et cupiditate quidem?</p>
-                    -->
-                    <p>Estudiante de ingeniería de sistemas, tengo conocimientos en HTML, CSS y
+                    <h1 class="home_title"><span class="text_change">F</span>erney <span
+                            class="text_change">T</span>enorio <span class="text_change">B</span>asto</h1>
+                    <span class="home_profession">Desarrollador de Software</span>
+                    <div class="home_social">
+                        <a href="#" class="home_social-link"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#" class="home_social-link"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home_social-link"><i class='bx bxl-github'></i></a>
+                    </div>
+
+                    <a download=""
+                        href="https://drive.google.com/file/d/10jfdZRfhyrnIBoHGtt6Ah1-2_uTL8yQS/view?usp=share_link"
+                        class="button home_button">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <span class="section-subtitle">
+                Mi descripción
+            </span>
+            <h2 class="section-title">Sobre Mi</h2>
+            <div class="about_container bd-grid">
+                <div class="about_data">
+                    <p class="about_description">Soy estudiante de ingeniería de sistemas, tengo conocimientos en HTML,
+                        CSS y
                         lenguajes de programación como Java, Python, C#,
                         Visual Basic; bases de datos SQL usando MySQL,
-                        Oracle, cuento con conocimientos en soporte técnico.
+                        Oracle, cuento con conocimientos en soporte técnico. <br><br>
                         Soy una persona responsable, con
                         habilidades de interacción y pronta adaptación a los
                         cambios, con capacidad de trabajar de
                         manera autónoma o colectiva, capaz de asumir nuevos
                         retos.</p>
+                    <img src="./img/ferney.png" alt="" class="about_img">
+                </div>
 
-                    <div class="btn-box">
-                        <a href="#" class="btn">Descargar CV</a>
-                        <a href="#" class="btn contact-me">Contáctame</a>
+                <div>
+                    <div class="about_information">
+                        <h3 class="about_information-title">Información Personal</h3>
+                        <div class="about_information-data">
+                            <i class="bx bx-user about_information-icon"></i>
+                            <span>Ferney Tenorio Basto</span>
+                        </div>
+                        <div class="about_information-data">
+                            <i class="bx bx-phone about_information-icon"></i>
+                            <span>3059064346</span>
+                        </div>
+                        <div class="about_information-data">
+                            <i class="bx bx-envelope about_information-icon"></i>
+                            <span>ferneybasto97@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="about_information">
+                        <h3 class="about_information-title">Experiencia</h3>
+                        <div class="about_information-data">
+                            <i class="bx bx-medal about_information-icon"></i>
+                            <div>
+                                <span class="about_information-subtitle">+8 años de</span>
+                                <span class="about_information-subtitle-small">experiencia</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <!--page 1 & 2-->
-            <div class="book-page page-right turn" id="turn-1">
-                <div class="page-front">
-                    <!-- page experiece-->
-                    <h1 class="title">Experiencia Profesional</h1>
 
-                    <div class="workeduc-box">
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Abril 2023 - Actual</span>
-                            <h3>Desarrollador de Software - NEOSOFTWARE INGENIERIA SAS</h3>
-                            <p>Actualización del sistema de información Financiero programado
-                                en Visual Basic . NET; gestión de Base de datos en MySQL</p>
-                        </div>
+        </section>
 
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Jul 2022 - Feb 2023</span>
-                            <h3>IT Support Assistant - SOLVO SAS</h3>
-                            <p>Garantizar la documentación adecuada de los problemas de
-                                software y hardware. Gestionar los activos de TI y realizar
-                                mantenimiento preventivo de estaciones de trabajo y portátiles.</p>
-                        </div>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <span class="section-subtitle">Mis</span>
+            <h2 class="section-title">Habilidades</h2>
 
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Ene 2021 - May 2022</span>
-                            <h3>Auxiliar IT - ERM COLOMBIA / Contrato Temporal Staffing</h3>
-                            <p>Garantizar la documentación adecuada de los problemas de
-                                software y hardware. Gestionar los activos de TI y realizar
-                                mantenimiento preventivo de estaciones de trabajo y portátiles.</p>
-                        </div>
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Ene 2019 - Oct 2020</span>
-                            <h3>Desarrollador de Software - Fundación Visión Ágape</h3>
-                            <p>Realizar actualizaciones de
-                                la página corporativa usando CSS, Laravel y JavaScript.
-                                Asistente en el desarrollo de software en leguaje de
-                                programación Java para la administración de notas del colegio
-                                educativo de la Fundación, gestión de bases de datos. Gestionar
-                                y realizar mantenimiento de los recursos informáticos.</p>
-                        </div>
+            <div class="skills_container bd-grid">
 
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Ene 2015 - Ene 2019</span>
-                            <h3>Desarrollador de Software - Fundación Visión Ágape</h3>
-                            <p>Gestión de Bases de datos en MySQL, uso de CSS, Laravel,
-                                HTML para crear página web corporativa, administración y
-                                mantenimiento de recursos informáticos.</p>
-                        </div>
+                <div class="skills_content">
+                    <h3 class="skills_subtitle">Frontend</h3>
+
+                    <div class="skills_data">
+                        <span class="skills_name">HTML</span>
+                        <span class="skills_number">70%</span>
+                        <span class="skills_bar skills_html">
+                        </span>
                     </div>
 
-                    <sapn class="number-page">1 de 6</sapn>
-                    <!--next btn-->
-                    <span class="nextprev-btn" data-page="turn-1"><i class='bx bxs-chevron-right'></i></span>
+                    <div class="skills_data">
+                        <span class="skills_name">CSS</span>
+                        <span class="skills_number">60%</span>
+                        <span class="skills_bar skills_css">
+                        </span>
+                    </div>
+
+                    <div class="skills_data">
+                        <span class="skills_name">Laravel</span>
+                        <span class="skills_number">60%</span>
+                        <span class="skills_bar skills_laravel">
+                        </span>
+                    </div>
+                    <div class="skills_data">
+                        <span class="skills_name">Bootstrap</span>
+                        <span class="skills_number">50%</span>
+                        <span class="skills_bar skills_bootstrap">
+                        </span>
+                    </div>
                 </div>
-                <!-- page education-->
-                <div class="page-back">
-                    <h1 class="titles">Estudios</h1>
 
-                    <div class="workeduc-box">
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>May 2021 - Actual</span>
-                            <h3>Universidad Uk - Mexico</h3>
-                            <p>Estudiante de Ingeniería en Sistemas</p>
-                        </div>
+                <div class="skills_content">
+                    <h3 class="skills_subtitle">Backend</h3>
 
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Dic 2023</span>
-                            <h3>SENA</h3>
-                            <p>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</p>
-                        </div>
-
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Dic 2013</span>
-                            <h3>Institución Educativa Cristiana Visión Ágape</h3>
-                            <p>Bachiller Técnico en Sistemas</p>
-                        </div>
-
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Nov 2013</span>
-                            <h3>SENA</h3>
-                            <p>Técnico en Sistemas</p>
-                        </div>
-
-                    </div>
-                    <h1 class="titles">Cursos</h1>
-                    <div class="workeduc-box">
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Dic -2023</span>
-                            <h3>Oracle Academy</h3>
-                            <p>Database Programming with SQL</p>
-                        </div>
-
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Ago 2023</span>
-                            <h3>SCRUMstudy</h3>
-                            <p>Scrum Fundamentals Certified</p>
-                        </div>
-
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Dic 2021</span>
-                            <h3>Universidad de Caldas - Colombia</h3>
-                            <p>Diplomado en habilidades en programación con énfasis en
-                                aplicaciones Web Misión TIC 2022.</p>
-                        </div>
-
-                        <div class="workeduc-content">
-                            <span class="year"><i class='bx bxs-calendar-check'></i>Abr 2021</span>
-                            <h3>Coursera</h3>
-                            <p>Google IT Support – Coursera.</p>
-                        </div>
-
+                    <div class="skills_data">
+                        <span class="skills_name">Java</span>
+                        <span class="skills_number">80%</span>
+                        <span class="skills_bar skills_java">
+                        </span>
                     </div>
 
-                    <sapn class="number-page">2 de 6</sapn>
-                    <!--prev btn-->
-                    <span class="nextprev-btn back" data-page="turn-1">
-                        <i class='bx bxs-chevron-left'></i>
-                    </span>
+                    <div class="skills_data">
+                        <span class="skills_name">Python</span>
+                        <span class="skills_number">60%</span>
+                        <span class="skills_bar skills_py">
+                        </span>
+                    </div>
+
+                    <div class="skills_data">
+                        <span class="skills_name">PHP</span>
+                        <span class="skills_number">60%</span>
+                        <span class="skills_bar skills_php">
+                        </span>
+                    </div>
+                    <div class="skills_data">
+                        <span class="skills_name">C#</span>
+                        <span class="skills_number">50%</span>
+                        <span class="skills_bar skills_csharp">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <h3 class="skills_subtitle">Bases de Datos</h3>
+
+                    <div class="skills_data">
+                        <span class="skills_name">MySQL</span>
+                        <span class="skills_number">75%</span>
+                        <span class="skills_bar skills_mysql">
+                        </span>
+                    </div>
+
+                    <div class="skills_data">
+                        <span class="skills_name">Oracle</span>
+                        <span class="skills_number">60%</span>
+                        <span class="skills_bar skills_oracle">
+                        </span>
+                    </div>
+
+                    <div class="skills_data">
+                        <span class="skills_name">SQL Server</span>
+                        <span class="skills_number">60%</span>
+                        <span class="skills_bar skills_sql_server">
+                        </span>
+                    </div>
+                    <div class="skills_data">
+                        <span class="skills_name">PosgtreSQL</span>
+                        <span class="skills_number">55%</span>
+                        <span class="skills_bar skills_posgtresql">
+                        </span>
+                    </div>
                 </div>
             </div>
-            <!--page 3 & 4-->
-            <div class="book-page page-right turn" id="turn-2">
-                <!--servicios-->
-                <div class="page-front">
-                    <h1 class="title">Mis Servicios</h1>
-                    <div class="services-box">
-                        <div class="services-content">
-                            <i class='bx bx-code-curly'></i>
-                            <h3>Desarrollador de Software</h3>
-                            <p>Desarrollo páginas web y desarrollo de software de escritorio</p>
-                            <!--<a href="" class="btn" hidden>Leer Más</a>-->
-                        </div>
+        </section>
 
-                        <div class="services-content">
-                            <i class='bx bx-server'></i>
-                            <h3>Cableado Estructurado</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <!--<a href="" class="btn" hidden>Leer Más</a>-->
-                        </div>
+        <!--===== Experience =====-->
+        <section class="education section" id="experience">
+            <span class="section-subtitle">Mi</span>
+            <h2 class="section-title">Experiencia</h2>
 
-                        <div class="services-content">
-                            <i class='bx bx-laptop'></i>
-                            <h3>Mantenimiento</h3>
-                            <p>Doy mantenimiento a computador de mesa o portátil</p>
-                            <!--<a href="" class="btn" hidden>Leer Más</a>-->
-                        </div>
-
+            <div class="education_container bd-grid">
+                <div class="education_content">
+                    <div>
+                        <h3 class="work_year_right">Abr 2023 - Actual</h3>
+                        <h3 class="work_year_right">NEOSOFTWARE INGENIERIA SAS</h3>
                     </div>
 
-                    <sapn class="number-page">3 de 6</sapn>
-                    <!--prev btn-->
-                    <span class="nextprev-btn" data-page="turn-2">
-                        <i class='bx bxs-chevron-right'></i>
-                    </span>
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
 
+                        </span>
+                    </div>
 
+                    <div>
+                        <h3 class="work_text_title">Desarrollador de Software</h3>
+                        <p class="work_text">Actualización del sistema de información Financiero programado
+                            en Visual Basic . NET; gestión de Base de datos en MySQ</p>
+                    </div>
                 </div>
-                <!--habilidades-->
-                <div class="page-back">
-                    <h1 class="title">Mis Habilidades</h1>
 
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <h3>Front-End</h3>
-                            <div class="content">
-                                <span><i class='bx bxl-html5'> </i> HTML </span>
-                                <span><i class='bx bxl-css3'> </i> CSS </span>
-                                <span><i class='bx bxl-javascript'> </i> JS</span>
-                                <span><i class='bx bxs-bullseye'></i> Laravel</span>
-                                <span><i class='bx bxl-bootstrap'> </i> Bootstrap</span>
-                            </div>
-                        </div>
-                        <div class="skills-content">
-                            <h3>Back-End</h3>
-                            <div class="content">
-                                <span> <i class='bx bxl-java'> </i> Java</span>
-                                <span><i class='bx bxl-python'> </i> Python </span>
-                                <span><i class='bx bxl-php'></i> PHP </span>
-                                <span><i class='bx bx-code'></i> C# </span>
-                                <span><i class='bx bx-code'></i> Visual Basic</span>
-                            </div>
-                        </div>
-                        <div class="skills-content">
-                            <h3>Base de Datos</h3>
-                            <div class="content">
-                                <span> <i class='bx bxs-data'></i> Mysql</span>
-                                <span> <i class='bx bxs-data'></i> Oracle</span>
-                                <span><i class='bx bxs-data'></i> SQL Server </span>
-                            </div>
-                        </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="work_year_right">Jul 2022 - Feb 2023</h3>
+                        <h3 class="work_year_right">SOLVO SAS</h3>
                     </div>
-                    <sapn class="number-page">4 de 6</sapn>
-                    <!--prev btn-->
-                    <span class="nextprev-btn back" data-page="turn-2">
-                        <i class='bx bxs-chevron-left'></i>
-                    </span>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="work_text_title">IT Support Assistant</h3>
+                        <p class="work_text">Garantizar la documentación adecuada de los problemas de
+                            software y hardware. Gestionar los activos de TI y realizar
+                            mantenimiento preventivo de estaciones de trabajo y portátiles.</p>
+                    </div>
+                </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="work_year_right">Ene 2021 - May 2022</h3>
+                        <h3 class="work_year_right">ERM COLOMBIA / Contrato Temporal Staffing</h3>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="work_text_title">Auxiliar IT</h3>
+                        <p class="work_text">Garantizar la documentación adecuada de los problemas de
+                            software y hardware. Gestionar los activos de TI y realizar
+                            mantenimiento preventivo de estaciones de trabajo y portátiles.</p>
+                    </div>
+                </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="work_year_right">Ene 2019 - Oct 2020</h3>
+                        <h3 class="work_year_right">Fundación Visión Ágape</h3>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="work_text_title">Técnico de Soporte y Mantenimiento</h3>
+                        <p class="work_text">Realizar actualizaciones de
+                            la página corporativa usando CSS, Laravel y JavaScript.
+                            Asistente en el desarrollo de software en leguaje de
+                            programación Java para la administración de notas del colegio
+                            educativo de la Fundación, gestión de bases de datos. Gestionar
+                            y realizar mantenimiento de los recursos informáticos.</p>
+                    </div>
+                </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="work_year_right">Ene 2015 - Ene 2019</h3>
+                        <h3 class="work_year_right">Fundación Visión Ágape</h3>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="work_text_title">Técnico de Soporte y Mantenimiento</h3>
+                        <p class="work_text">Gestión de Bases de datos en MySQL, uso de CSS, Laravel,
+                            HTML para crear página la web corporativa, administración y
+                            mantenimiento de recursos informáticos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== EDUCATION =====-->
+        <section class="education section" id="education">
+            <span class="section-subtitle">Mis</span>
+            <h2 class="section-title">Estudios</h2>
+
+            <div class="education_container bd-grid">
+                <div class="education_content">
+                    <div>
+                        <h3 class="education_year">2021 - May 2024</h3>
+                        <span class="education_university">Universidad Uk</span>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="education_race">ingeniería en Sistemas</h3>
+                        <span class="education_university">Pregado</span>
+                    </div>
+                </div>
+
+                <div class="education_content">
+                    <div>
+                        <h3 class="education_year">2021 - 2023</h3>
+                        <span class="education_university">SENA</span>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="education_race">Tenologo En Desarrollo y Analisis de Sistemas de Información</h3>
+                        <span class="education_university">Tecnologia</span>
+                    </div>
+                </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="education_year">2012 - 2013</h3>
+                        <span class="education_university">SENA</span>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="education_race">Técnico en Sistemas</h3>
+                        <span class="education_university">Técnico</span>
+                    </div>
+                </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="education_year">2012 - 2013</h3>
+                        <span class="education_university">Institución Educativa Cristiana Visón Ágape</span>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_counter"></span>
+                        <span class="education_line">
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="education_race">Bachiller Técnico en sistemas</h3>
+                        <span class="education_specialty">Bachiller</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== SERVICES =====-->
+        <section class="services section" id="services">
+            <span class="section-subtitle">Mis</span>
+            <h2 class="section-title">Servicios</h2>
+
+            <div class="services_container bd-grid">
+
+                <div class="services_content">
+                    <i class='bx bx-code-alt services_icon'></i>
+                    <h3 class="services_title">Desarrollado de Software</h3>
+                    <p class="services_description">Desarrollo páginas web y desarrollo de software de escritorio</p>
+                </div>
+                <div class="services_content">
+                    <i class='bx bx-server services_icon'></i>
+                    <h3 class="services_title">Cableado Estructurado</h3>
+                    <p class="services_description">Gestion en cableado estructurado</p>
+                </div>
+                <div class="services_content">
+                    <i class='bx bx-laptop services_icon'></i>
+                    <h3 class="services_title">Mantenimiento</h3>
+                    <p class="services_description">Mantenimiento a computador de mesa o computador portátil</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== PROJECT IN MIND =====-->
+
+
+        <!--===== WORKS =====-->
+        <section class="works section" id="works">
+            <span class="section-subtitle">Mis</span>
+            <h2 class="section-title">Proyectos Recientes</h2>
+
+            <div class="works_container bd-grid">
+                <div class="works_img">
+                    <img src="./img/project1.png" alt="">
+                    <div class="works_data">
+                        <a href="#" class="works_link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works_title">Portafolio Personal</span>
+                    </div>
+                </div>
+                <div class="works_img">
+                    <img src="./img/work-4.png" alt="">
+                    <div class="works_data">
+                        <a href="#" class="works_link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works_title">Proyecto - Barberia</span>
+                    </div>
                 </div>
             </div>
-            <!--page 5 & 6-->
-            <div class="book-page page-right turn" id="turn-3">
-                <!--proyectos-->
-                <div class="page-front">
-                    <h1 class="title">Mis Proyectos</h1>
+        </section>
 
-                    <div class="protafolio-box">
-                        <div class="img-box">
-                            <img src="./img/work-4.png" alt="">
-                        </div>
-
-                        <div class="info-box">
-                            <div class="info-title">
-                                <h3></h3>
-                                <a href="https://github.com/ferneyb" target="_blank" rel="noopener noreferrer">Ver Información ...<i
-                                        class='bx bx-link-external'></i></a>
-                            </div>
-                            <p>En este apartado </p>
-                            <p>encontrarás los proyectos realizados en
-                                tecnologías PHP, MySQL, Python, Javascript y Java</p>
-                        </div>
-                        <!--
-                        <div class="btn-box">
-                            <a href="#" class="btn">Visitar ...</a>
-                            <a href="#" class="btn">Ver ...</a>
-                        </div>
-                        -->
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact_container bd-grid">
+                <form autocomplete="off" name="submit-to-google-sheet">
+                    <div class="contact_input">
+                        <input type="text" autocomplete="off" name="Name" id="Name" class="field" required
+                            placeholder="Nombres y Apellidos">
+                        <input type="email" autocomplete="off" name="Email" id="Email" class="field" required
+                            placeholder="Correo Electrónico">
+                        <input type="number" autocomplete="off" name="Phone" id="Phone" class="field" required
+                            placeholder="Número de teléfono">
+                        <input type="text" autocomplete="off" name="Subject" id="Subject" class="field" required
+                            placeholder="Asunto">
+                        <textarea name="Message" autocomplete="off" id="Message" cols="30" rows="3" class="field"
+                            placeholder="Mensaje" required> </textarea>
+                        <input type="datetime-local" name="Date-local" id="datetime-local" name="meeting-time"
+                            class="field" readonly hidden />
+                        <input type="submit" class="btn button contact_button" value="Enviar">
+                        <span class="msg" id="msg"></span>
                     </div>
-
-                    <sapn class="number-page">5 de 6</sapn>
-                    <!--prev btn-->
-                    <span class="nextprev-btn" data-page="turn-3">
-                        <i class='bx bxs-chevron-right'></i>
-                    </span>
-                </div>
-                <!--contacto-->
-                <div class="page-back">
-                    <h1 class="title">Contáctame</h1>
-
-                    <div class="contact-box">
-                        <form autocomplete="off" name="submit-to-google-sheet">
-                            <input type="text" autocomplete="off" name="Name" id="Name" class="field" required
-                                placeholder="Nombres y Apellidos">
-                            <input type="email" autocomplete="off" name="Email" id="Email" class="field" required
-                                placeholder="Correo Electrónico">
-                            <input type="number" autocomplete="off" name="Phone" id="Phone" class="field" required
-                                placeholder="Número de teléfono">
-                            <input type="text" autocomplete="off" name="Subject" id="Subject" class="field" required
-                                placeholder="Asunto">
-                            <textarea name="Message" autocomplete="off" id="Message" cols="30" rows="3" class="field"
-                                placeholder="Mensaje..." required> </textarea>
-                            <input type="datetime-local" name="Date-local" id="datetime-local" name="meeting-time"
-                                class="field" readonly hidden />
-                            <input type="submit" class="btn" value="Enviar">
-                            <span class="msg" id="msg"></span>
-                        </form>
+                    <div>
+                        <div class="contact_info">
+                            <h3 class="contact_subtitle">Teléfono</h3>
+                            <span class="contact_text"><i class='bx bx-phone'></i> 3059064346</span>
+                        </div>
+                        <div class="contact_info">
+                            <h3 class="contact_subtitle">Correo Electrónico</h3>
+                            <span class="contact_text"><i class='bx bxs-envelope'></i> ferneybasto97@gmail.com</span>
+                        </div>
                     </div>
-                    <sapn class="number-page">6 de 6</sapn>
-                    <!--prev btn-->
-                    <span class="nextprev-btn back" data-page="turn-3">
-                        <i class='bx bxs-chevron-left'></i>
-                    </span>
-
-                    <a href="#" class="back-profile">
-                        <p>Perfil</p>
-                        <i class='bx bxs-user'></i>
-                    </a>
-                </div>
+                </form>
             </div>
+        </section>
+    </main>
 
-
-
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <h3 class="footer_title"><span class="text_change">F</span>erney <span class="text_change">T</span>enorio <span
+                class="text_change">B</span>asto</h3>
+        <p class="footer_description">Desarrollador de Software | Estudiante de Ingeniería en Sistemas</p>
+        <div class="footer_container bd-grid">
+            <div class="footer_social">
+                <a href="#" class="footer_link"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#" class="footer_link"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="footer_link"><i class='bx bxl-github'></i></a>
+            </div>
+            <p class="footer_copy"> &copy; 2022 -
+                <script>document.write(new Date().getFullYear())</script> desarrollado por Ferney Tenorio Basto
+            </p>
         </div>
-    </div>
-
-
+    </footer>
+    <!--===== MAIN JS =====-->
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>
