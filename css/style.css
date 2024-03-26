@@ -274,7 +274,14 @@ img {
   color: var(--first-color-lighten);
   margin-bottom: var(--mb-5);
 }
-
+.contact_link{
+  font-size: var(--h2-font-size);
+  color: var(--first-color-lighten);
+  margin: 0 var(--mb-1);
+}
+.contact_link:hover a{
+  color: var(--second-color);
+}
 .home_social {
   margin-bottom: 5rem;
 }
