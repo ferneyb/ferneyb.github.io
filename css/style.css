@@ -22,6 +22,7 @@
   --second-color-dark: #b60c44;
   /*===== Font and typography =====*/
   --body-font: "Poppins", sans-serif;
+  --h1-font-size-title: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -43,7 +44,7 @@
 @media screen and (min-widht:768px) {
 :root {
     /*===== Font and typography =====*/
-    --body-font: "Poppins", sans-serif;
+    --h1-font-size-title: 1.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.125rem;
@@ -117,7 +118,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   color: var(--first-color-lighten);
   text-align: center;
   font-weight: var(--font-bold);
@@ -126,7 +127,7 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  max-width: auto;
   display: grid;
   grid-template-columns: 100%;
   column-gap: 2rem;
@@ -134,7 +135,10 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
-
+.logo_background{
+  font-style: italic;
+  box-shadow: o 2px 4px rgba(0, 0, 0, .1);
+}
 .bd-grid .nav_logo {
   color: var(--second-color);
   font-size: var(--normal-font-size);
@@ -181,12 +185,12 @@ img {
   color: var(--first-color-dark);
   cursor: pointer;
 }
-/*
+
 .nav_close:hover {
   color: var(--second-color-dark);
   font-size: 2rem;
 }
-*/
+
 .nav_item {
   margin-bottom: var(--mb-4);
 }
@@ -256,7 +260,7 @@ img {
 }
 
 .home_title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h1-font-size-title);
   color: var(--first-color-lighten);
   font-weight: var(--font-semi-bold);
 }
@@ -266,7 +270,7 @@ img {
 }
 
 .home_profession {
-  font-size: var(--small-font-size);
+  font-size: var(--h1-font-size);
   color: var(--first-color-lighten);
   margin-bottom: var(--mb-5);
 }
@@ -337,7 +341,7 @@ img {
 .about_description {
   margin: var(--mb-2);
   text-align: justify;
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
 }
 
 .about_img {
@@ -540,7 +544,7 @@ img {
 
 .work_text {
   text-align: justify;
-  font-size: .7rem;
+  font-size: var(--small-font-size);
 }
 
 .work_text_title {
