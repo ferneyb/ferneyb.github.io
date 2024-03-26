@@ -415,7 +415,9 @@ img {
   width: 70%;
 
 }
-
+.skills_vb{
+  width: 60%;
+}
 .skills_css {
   width: 60%;
 
@@ -446,7 +448,7 @@ img {
 
 }
 
-.skills_chsarp {
+.skills_csharp {
   width: 50%;
 
 }
