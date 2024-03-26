@@ -717,17 +717,17 @@ input[type=number] {
 
 .footer_title {
   font-size: var(--h1-font-size);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 
 .footer_description {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
   font-size: var(--smaller-font-size);
   color: var(--first-color-lighten);
 }
 
 .footer_social {
-  margin-bottom: 3rem;
+  margin-bottom: var(--mb-1);
 }
 
 .footer_link {
